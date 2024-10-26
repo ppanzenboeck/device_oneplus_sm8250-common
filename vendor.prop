@@ -120,7 +120,7 @@ vendor.qcom.bluetooth.soc=hastings
 # Camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 vendor.camera.algo.jpeghwencode=0
-vendor.camera.aux.packagelist=android,com.oneplus.camera
+vendor.camera.aux.packagelist=android,com.oneplus.camera,net.sourceforge.opencamera
 
 # Chipset
 ro.soc.manufacturer=QTI
