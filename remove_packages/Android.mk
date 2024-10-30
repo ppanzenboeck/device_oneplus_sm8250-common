@@ -41,21 +41,27 @@ Phonesky \
 GooglePrintRecommendationService \
 Flipendo \
 GoogleTTS \
-more...
+more... \
+no longer present now: \
+ScribePrebuilt
 
 #vendor/gms
 LOCAL_OVERRIDES_PACKAGES += \
-    CalculatorGooglePrebuilt \
-    CalendarGooglePrebuilt \
-    Chrome-Stub \
+    CalculatorGoogle \
+    CalendarGoogle \
+    Chrome64 \
     GoogleContacts \
     Maps \
     Photos \
-    PrebuiltGmail \
+    Gmail2 \
     talkback \
-    FilesPrebuilt \
-    ScribePrebuilt \
-    Accord
+    FilesGoogle \
+    YouTube \
+    Drive \
+    PersonalSafety \
+    Accord \
+    FossifyGallery \
+    com.google.android.apps.dialer.call_recording_audio.features
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
