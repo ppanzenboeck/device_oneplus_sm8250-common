@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key-calibrate
 
+PRODUCT_PACKAGES += \
+    OPlusSystemUIOverlay \
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
