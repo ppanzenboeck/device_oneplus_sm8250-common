@@ -14,6 +14,10 @@ TARGET_USES_PICO_GAPPS=true
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Parts
+PRODUCT_PACKAGES += \
+    Parts
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 

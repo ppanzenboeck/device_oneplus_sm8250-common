@@ -44,6 +44,13 @@ on boot
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
+    # Parts
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+
+    chown system system /sys/class/thermal/thermal_zone78/temp
+    chmod 0660 /sys/class/thermal/thermal_zone78/temp
+
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
 
