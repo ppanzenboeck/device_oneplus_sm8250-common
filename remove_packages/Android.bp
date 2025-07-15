@@ -19,6 +19,8 @@ android_app_import {
          "PersonalSafety",
          "Accord",
          "FossifyGallery",
+         "Jelly",
+         "Etar",
      ],
  	dex_preopt: {
  		enabled: false,
