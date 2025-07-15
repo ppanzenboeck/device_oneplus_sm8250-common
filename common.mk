@@ -405,3 +405,8 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Remove Packages
 PRODUCT_PACKAGES += \
   RemovePackages
+
+# DERPFEST FLAGS
+DERPFEST_BUILD_TYPE=Official
+# EXTRA_UDFPS_ICONS=true is not set
+# TARGET_NOT_USES_BLUR=true is not set
