@@ -410,3 +410,5 @@ PRODUCT_PACKAGES += \
 DERPFEST_BUILD_TYPE=Official
 # EXTRA_UDFPS_ICONS=true is not set
 # TARGET_NOT_USES_BLUR=true is not set
+
+TARGET_DISABLE_EPPE := true
