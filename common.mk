@@ -401,3 +401,7 @@ $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
 
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+  RemovePackages
