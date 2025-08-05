@@ -120,4 +120,7 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+    <bool name="config_screen_off_udfps_default_on">true</bool>
+
 </resources>
