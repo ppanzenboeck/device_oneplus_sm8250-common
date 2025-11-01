@@ -406,8 +406,13 @@ $(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
 
 # ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
+# GameBar Performance Overlay
+$(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
+
+# DERPFEST FLAGS
 DERPFEST_BUILD_TYPE := Official
 #DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
-#TARGET_DISABLE_EPPE := true
+TARGET_DISABLE_EPPE := true
+
