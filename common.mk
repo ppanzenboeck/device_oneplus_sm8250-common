@@ -420,6 +420,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 DERPFEST_BUILD_TYPE := Official
+#DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
+#TARGET_DISABLE_EPPE := true
 
 PRODUCT_COPY_FILES += \
     device/oneplus/sm8250-common/rootdir/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
