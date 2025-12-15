@@ -183,3 +183,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
+
+SELINUX_IGNORE_NEVERALLOWS := true
