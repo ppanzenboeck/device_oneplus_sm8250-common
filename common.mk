@@ -410,3 +410,5 @@ $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 DERPFEST_BUILD_TYPE := Official
+#DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
+#TARGET_DISABLE_EPPE := true
