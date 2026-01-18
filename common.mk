@@ -399,3 +399,12 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
+
+# Debloat
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+DERPFEST_BUILD_TYPE := Official
+
+PRODUCT_COPY_FILES += \
+    device/oneplus/sm8250-common/rootdir/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
