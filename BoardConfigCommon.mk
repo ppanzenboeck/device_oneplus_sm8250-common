@@ -57,8 +57,8 @@ TARGET_BOOTLOADER_BOARD_NAME := kona
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
 # Camera
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
-TARGET_USES_OPLUS_CAMERA := true
+$(call soong_config_set_bool,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
+$(call soong_config_set,camera,package_name,com.oplus.packageName)
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
