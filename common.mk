@@ -414,5 +414,5 @@ $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 # DERPFEST FLAGS
 DERPFEST_BUILD_TYPE := Official
 #DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
-TARGET_DISABLE_EPPE := true
+#TARGET_DISABLE_EPPE := true
 
