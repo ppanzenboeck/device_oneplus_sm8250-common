@@ -23,6 +23,7 @@ android_app_import {
          "Etar",
          "GeminiShell_227",
          "PrebuiltDeskClockGoogle_76007351",
+         "DevicePersonalizationPrebuiltPixel2025-playstore_aiai_20250306.00_RC10",
      ],
  	dex_preopt: {
  		enabled: false,
