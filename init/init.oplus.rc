@@ -33,6 +33,28 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys11/restart_level RELATED
 
 on boot
+    # Charger
+    chmod 0755 /sys/class/oplus_chg
+    chmod 0755 /sys/class/oplus_chg/battery
+    chmod 0755 /sys/class/oplus_chg/usb
+    chmod 0755 /sys/class/oplus_chg/ac
+    chmod 0755 /sys/class/oplus_chg/wireless
+    chmod 0755 /sys/devices/virtual/oplus_chg
+    chmod 0755 /sys/devices/virtual/oplus_chg/battery
+    chmod 0755 /sys/devices/virtual/oplus_chg/usb
+    chmod 0755 /sys/devices/virtual/oplus_chg/ac
+    chmod 0755 /sys/devices/virtual/oplus_chg/wireless
+    chown system system /sys/class/oplus_chg/battery/voocchg_ing
+    chmod 0664 /sys/class/oplus_chg/battery/voocchg_ing
+    chown system system /sys/class/oplus_chg/battery/fast_charge
+    chmod 0664 /sys/class/oplus_chg/battery/fast_charge
+    chown system system /sys/class/oplus_chg/battery/fast_chg_type
+    chmod 0664 /sys/class/oplus_chg/battery/fast_chg_type
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chmod 0664 /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/charge_technology
+    chmod 0664 /sys/class/oplus_chg/battery/charge_technology
+
     # Display
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
