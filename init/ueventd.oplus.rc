@@ -5,7 +5,22 @@
 #
 
 # Charger
+/sys/devices/virtual/oplus_chg/* * 0664 system system
+/sys/devices/virtual/oplus_chg/*/* 0664 system system
+/sys/devices/virtual/oplus_chg/battery/* 0664 system system
+/sys/devices/virtual/oplus_chg/usb/* 0664 system system
+/sys/devices/virtual/oplus_chg/wireless/* 0664 system system
+/sys/devices/virtual/oplus_chg/ac/* 0664 system system
+/sys/class/oplus_chg/*  *                      0664    system  system
+/sys/class/oplus_chg/*/* *                     0664    system  system
 /sys/class/oplus_chg/*  mmi_charging_enable    0660    system  system
+/sys/class/oplus_chg/*  fast_charge            0660    system  system
+/sys/class/oplus_chg/*  voocchg_ing            0660    system  system
+/sys/class/oplus_chg/battery/*                 0660    system  system
+/sys/class/oplus_chg/usb/*                     0660    system  system
+/sys/class/oplus_chg/wireless/*                0660    system  system
+/sys/class/power_supply/battery/*              0660    system  system
+/sys/class/power_supply/battery/fastchg_status 0660    system  system
 
 # Reserve
 /dev/block/bootdevice/by-name/oplusreserve1    0660    root    system
