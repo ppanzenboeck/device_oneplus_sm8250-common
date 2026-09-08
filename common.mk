@@ -410,6 +410,11 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 # GameBar Performance Overlay
 $(call inherit-product-if-exists, packages/apps/GameBar/gamebar.mk)
 
+# SELinux Treble Labeling
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE := \
+    device/oneplus/sm8250-common/sepolicy/tracking_list.yaml
+PRODUCT_ENFORCE_SELINUX_TREBLE_LABELING := false
+
 # DERPFEST FLAGS
 DERPFEST_BUILD_TYPE := Official
 #DERPFEST_VERSION_APPEND_TIME_OF_DAY := true
